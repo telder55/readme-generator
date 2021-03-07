@@ -41,7 +41,7 @@ const questions = () =>
             {
                 type: 'input',
                 name: 'contributing',
-                message: 'Enter instructions for contributing to this project.',
+                message: 'Enter guidelines for contributing to this project.',
 
             },
             {
@@ -53,7 +53,19 @@ const questions = () =>
             {
                 type: 'input',
                 name: 'questions',
-                message: 'Enter any questions.',
+                message: 'Enter your github username',
+
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'Enter a contact email for people to reach you with questions',
+
+            },
+            {
+                type: 'input',
+                name: 'personName',
+                message: 'Enter your name',
 
             },
 
@@ -71,9 +83,6 @@ const questions = () =>
     ;
 
 questions();
-
-
-
 
 // TODO: Create a function to write README file - maybe create an output folder.
 function writeToFile(data) {

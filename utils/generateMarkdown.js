@@ -63,12 +63,18 @@ function generateMarkdown(data) {
   let licenseChoice = renderLicenseBadge(data.license)
 
   return `# ${data.title} 
+${licenseChoice}
 
 ## Description 
 ${data.description}
 
 ## Table of Contents 
-
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation 
 ${data.installation}
@@ -77,8 +83,6 @@ ${data.installation}
 ${data.usage}
 
 ## License 
-${licenseChoice} 
-
 ${data.license}
 
 ## Contributing 
@@ -88,7 +92,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions 
-${data.questions}
+Please direct any questions to [${data.personName}](mailto:${data.email}?subject=[GitHub]) and find my github profile here: https://github.com/${data.questions}
 
 
 `;
